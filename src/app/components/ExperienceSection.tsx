@@ -5,7 +5,7 @@ const experiences = [
     {
         title: "Senior Full-stack Engineer",
         company: "Freelance",
-        logo: "/logos/awesomeco.png",
+        logo: "/logos/dan-logo.jpg",
         date: "2025 — Present",
         bullets: ["Led frontend for product X", "Mentored team and improved DX", "Delivered 2x performance improvements"],
     },
@@ -14,21 +14,21 @@ const experiences = [
         company: "Wix.com",
         logo: "/logos/wix-logo.jpg",
         date: "2023 — 2025",
-        bullets: ["Built features across stack", "Shipping consumer and admin apps"],
+        bullets: ["Led the rewrite of the App Installer used by millions of Wix users", "Improved build stability and release processes through automated testing and modular architecture."],
     },
     {
         title: "Senior Full-stack Engineer",
         company: "Netapp",
         logo: "/logos/netapp-logo.jpg",
         date: "2020 — 2023",
-        bullets: ["Focused on UI and integrations", "Improved accessibility and testing"],
+        bullets: ["Served as tech lead and focal point for the Israel R&D team", "Designed and implemented a company-wide UI Components Library adopted across multiple cloud products, cutting feature delivery time by ~40%."],
     },
         {
         title: "Frontend Engineer",
         company: "UI human factors",
         logo: "/logos/ui-logo.png",
         date: "2018 — 2020",
-        bullets: ["Focused on UI and integrations", "Improved accessibility and testing"],
+        bullets: ["Delivered front-end features for diverse clients under SCRUM methodologies using React and TypeScript.", "Motorola: Developed modem configuration UI for consumer internet devices.","Clewmed (MedTech Startup): Built rapid MVP to demo stage in weeks for investor presentations.","Zerto (Enterprise Backup & Disaster Recovery): Independently developed a complex feature for backup plan creation and recovery flows.","NICE Systems / ECI Telecom: Contributed to front-end solutions in large-scale enterprise projects."],
     },
 ];
 
@@ -46,7 +46,7 @@ export default function ExperienceSection() {
                                 </div>
                                 <div className="exp-right">
                                     <h3>{e.title}</h3>
-                                    <span className="meta">{e.company} — {e.date}</span>
+                                    <span className="meta">{e.company} | {e.date}</span>
                                     <ul>
                                         {e.bullets.map((b, i) => <li key={i}>{b}</li>)}
                                     </ul>

@@ -11,7 +11,7 @@ export default function HeroSection() {
                         <p className="subtitle">Full‑stack developer — frontend leaning. 7 years building polished, high‑performance UIs.</p>
                         <div className="hero-ctas">
                             <a className="cta" href="#projects">See my work</a>
-                            <a className="muted" href="/files/Dan-Hilerowicz-Resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
+                        
                         </div>
                         <div className="hero-meta">
                             <span>React · Next.js · TypeScript · CSS & Animation · UX</span>

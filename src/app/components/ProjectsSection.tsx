@@ -1,12 +1,12 @@
 import React from "react";
 import Reveal from "./Reveal";
 
-type Project = { title: string; description: string; image: string; github?: string; live?: string };
+type Project = { title: string; description: string; image: string; link?: string;  };
 
 const projects: Project[] = [
-    { title: "Project A", description: "Frontend‑heavy app with advanced animations and polished UX.", image: "/projects/project-a.jpg", github: "https://github.com/danhiler/project-a", live: "#" },
-    { title: "Project B", description: "SaaS platform with Next.js and scalable API design.", image: "/projects/project-b.jpg", github: "https://github.com/danhiler/project-b", live: "#" },
-    { title: "Project C", description: "Data visualization UI optimized for performance.", image: "/projects/project-c.jpg", github: "https://github.com/danhiler/project-c" },
+    { title: "Agendia", description: "Business management for professionals", image: "/projects/agendia.png", link: "https://agendia.mx"},
+    { title: "Notreco", description: "Social network for stocks analysis", image: "/projects/notreco-logo.png", link: "https://notreco.com"},
+    { title: "Reporty", description: "Management of household expenses", image: "/projects/reporty-logo.jpg", link: "https://github.com/Danhiler/reporty-client" },
 ];
 
 export default function ProjectsSection() {
@@ -26,8 +26,8 @@ export default function ProjectsSection() {
                                     <h3>{p.title}</h3>
                                     <p>{p.description}</p>
                                     <div className="project-links">
-                                        {p.github && <a href={p.github} target="_blank" rel="noreferrer">Code</a>}
-                                        {p.live && <a href={p.live} target="_blank" rel="noreferrer">Live</a>}
+                                        {p.link && <a href={p.link} target="_blank" rel="noreferrer">Live</a>}
+                            
                                     </div>
                                 </div>
                             </article>
