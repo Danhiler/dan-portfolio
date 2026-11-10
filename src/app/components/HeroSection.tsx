@@ -8,13 +8,13 @@ export default function HeroSection() {
                 <Reveal>
                     <div className="hero-content">
                         <h1>Dan Hilerowicz</h1>
-                        <p className="subtitle">Full‑stack developer — frontend leaning. 7 years building polished, high‑performance UIs.</p>
+                        <p className="subtitle">Full‑stack engineer with 8+ years building scalable web applications, backend services, and polished, high‑performance UIs.</p>
                         <div className="hero-ctas">
                             <a className="cta" href="#projects">See my work</a>
                         
                         </div>
                         <div className="hero-meta">
-                            <span>React · Next.js · TypeScript · CSS & Animation · UX</span>
+                            <span>React · Next.js · TypeScript · Node.js & Server · Databases · CI/CD · UX</span>
                         </div>
                     </div>
                 </Reveal>

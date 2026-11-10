@@ -4,10 +4,14 @@ import Reveal from "./Reveal";
 const experiences = [
     {
         title: "Senior Full-stack Engineer",
-        company: "Freelance",
-        logo: "/logos/dan-logo.jpg",
+        company: "Nordstrom",
+        logo: "/logos/nordstrom-logo.svg",
         date: "2025 — Present",
-        bullets: ["Led frontend for product X", "Mentored team and improved DX", "Delivered 2x performance improvements"],
+        bullets: [
+            "Leveraged Claude Code extensively for AI-assisted debugging and code optimization in complex full-stack projects.",
+            "Diagnosed and fixed server memory overflows, addressing buffer overflows and leaks across backend services and database queries.",
+            "Designed and maintained server architecture, database schemas, and CI/CD pipelines (Docker, Kubernetes, Terraform), migrating core services deployments from GitLab to GitHub Actions.",
+        ],
     },
     {
         title: "Senior Full‑stack Engineer",
@@ -39,7 +43,7 @@ export default function ExperienceSection() {
                 <h2>Experience</h2>
                 <div className="experience-list">
                     {experiences.map((e) => (
-                        <Reveal key={e.title}>
+                        <Reveal key={e.company}>
                             <div className="experience-item">
                                 <div className="exp-left">
                                     <img src={e.logo} alt={e.company} className="company-logo" />
